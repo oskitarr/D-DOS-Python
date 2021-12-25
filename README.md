@@ -1,4 +1,4 @@
-# D-DOS
+# DDOS in python
 DDos-Attack
 What Is A DDos-Attack?
 
