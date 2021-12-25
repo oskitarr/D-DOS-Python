@@ -16,7 +16,7 @@ pip install keyboard
 
 pip install colorama
 
-git clone https://github.com/oskitarr/D-DOS.git
+git clone https://github.com/oskitarr/D-DOS-Python.git
 
 cd DDOS
 
