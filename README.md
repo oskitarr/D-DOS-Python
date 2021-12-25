@@ -10,6 +10,12 @@ by overwhelming it with traffic from multiple sources.
 
 Dwonload&Install
 
+pip install cv
+
+pip install keyboard
+
+pip install colorama
+
 git clone https://github.com/oskitarr/D-DOS.git
 
 cd DDOS
