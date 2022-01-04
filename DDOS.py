@@ -13,7 +13,7 @@ from datetime import datetime
 from colorama import Fore, Back, Style 
 colorama.init(autoreset=True)
 
-os.system("cls")
+
 
 def menu():
     print(Fore.RED + 
@@ -117,9 +117,9 @@ def FloodScriptL():
 
 def osSelection():
     so = input("""
-Wich is your operative system?
-[1] Linux
-[2] Windows
+    Wich is your operative system?
+    [1] Linux
+    [2] Windows
 
 --->""")
 
@@ -204,7 +204,26 @@ def Menu_InputW():
         elif ipt == "5":
             input("Press enter to close...")
         elif ipt == "4":
-            webbrowser.open("https://bitly.com/")
+            os.system("cls")
+            print(Fore.GREEN + """
+    [1] Bitly
+    [2] TinyURL
+    [3] Rebrandly
+    [4] return menu
+    """)
+            shipt = input("--->")
+            if shipt == "1":
+                webbrowser.open("https://bitly.com/")
+                Windows()
+            if shipt == "2":
+                webbrowser.open("https://tinyurl.com/app/")
+                Windows()
+            if shipt == "3":
+                webbrowser.open("https://www.rebrandly.com/")
+                Windows()
+            if shipt == "4":
+                Windows()
+            
 def Menu_InputL():
         ipt = input("--->")
         if ipt == "1":
@@ -224,16 +243,16 @@ def Menu_InputL():
             if mipt == "1":
                 webbrowser.open("https://ipstress.in/")
                 time.sleep(0.5)
-                Windows()
+                Linux()
             elif mipt == "2":
                 webbrowser.open("https://freestresser.to/")
-                Windows()
+                Linux()
             elif mipt == "3":
                 webbrowser.open("https://ipstress.in/")
                 webbrowser.open("https://freestresser.to/")
-                Windows()
+                Linux()
             elif mipt == "4":
-                Windows()
+                Linux()
         elif ipt == "3":
             os.system("clear")
             print(Fore.GREEN + """
@@ -245,20 +264,38 @@ def Menu_InputL():
             lipt = input("--->")
             if lipt == "1":
                 webbrowser.open("https://grabify.link/")
-                Windows()
+                Linux()
             elif lipt == "2":
                 webbrowser.open("https://iplogger.org/es/")
-                Windows()
+                Linux()
             elif lipt == "3":
                 webbrowser.open("https://grabify.link/")
                 webbrowser.open("https://iplogger.org/es/")
-                Windows()
+                Linux()
             elif lipt == "4":
-                Windows()
+                Linux()
         elif ipt == "5":
             input("Press enter to close...")
         elif ipt == "4":
-            webbrowser.open("https://bitly.com/")
+            os.system("clear")
+            print(Fore.GREEN + """
+    [1] Bitly
+    [2] TinyURL
+    [3] Rebrandly
+    [4] return menu
+    """)
+            shipt = input("--->")
+            if shipt == "1":
+                webbrowser.open("https://bitly.com/")
+                Linux()
+            if shipt == "2":
+                webbrowser.open("https://tinyurl.com/app/")
+                Linux()
+            if shipt == "3":
+                webbrowser.open("https://www.rebrandly.com/")
+                Linux()
+            if shipt == "4":
+                Linux()
 
 def Windows():
     os.system("cls")
